@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  let n = +prompt('Nhập N: ')
+  for (let i = 0; i < n+1; i++) {
+    for (let j = 0; j < i; j++) {
+      document.write('*')
+    }
+    document.write('<br>')
+  }
+  document.write('<br>')
+
+  for (let i = 0; i < n; i++) {
+    for (let j = n; j > i; j--) {
+      document.write('*')
+    }
+    document.write('<br>')
+  }
+  document.write('<br>')
+
+  for (let i = 0; i < n+1; i++) {
+      for (let j = n; j > i; j--) {
+          document.write('&nbsp;&nbsp;')
+      }
+      for (let k = 0; k < i; k++) {
+          document.write('*')
+      }
+      document.write('<br>')
+  }
+  document.write('<br>')
+
+  for (let i = 0; i < n+1; i++) {
+      for (let j = 0; j < i; j++) {
+          document.write('&nbsp;&nbsp;')
+      }
+      for (let k = n; k > i; k--) {
+          document.write('*')
+      }
+      document.write('<br>')
+  }
+
+
+
+
+</script>
+</html>
